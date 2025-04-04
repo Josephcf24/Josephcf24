@@ -34,14 +34,26 @@
             transform: scale(1.05);
         }
         img {
-            width: 208px;
-            border-radius: 10%;
-            border: 5px solid #00ffcc;
             transition: transform 0.3s;
         }
         img:hover {
             transform: rotate(10deg) scale(1.1);
         }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #00ffcc;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 0 auto 20px;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         h1 {
             color: #00ffcc;
             font-size: 2.5em;
@@ -85,7 +97,9 @@
 </head>
 <body>
     <div class="container">
-        <img src="https://via.placeholder.com/180" alt="Foto de perfil">
+        <div class="profile-pic">
+            <img src="https://via.placeholder.com/200" alt="Foto de perfil">
+        </div>
         <h1>Joseph Cardenas Flores</h1>
         <p class="subtitle">Estudiante de la carrera de Ingenieria de Sistemas e Informatica</p>
         
